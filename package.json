@@ -1,0 +1,23 @@
+{
+  "name": "react-to-do-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobbywillmes/react-to-do-list.git"
+  },
+  "author": "Bobby Willmes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobbywillmes/react-to-do-list/issues"
+  },
+  "homepage": "https://github.com/bobbywillmes/react-to-do-list#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2"
+  }
+}
