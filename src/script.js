@@ -54,7 +54,7 @@ class ToDoList extends React.Component {
     if (!new_task) {
       return;
     }
-    fetch("https://altcademy-to-do-list-api.herokuapp.com/tasks?api_key=302", {
+    fetch("https://altcademy-to-do-list-api.herokuapp.com/tasks?api_key=2", {
       method: "POST",
       mode: "cors",
       headers: { "Content-Type": "application/json" },
@@ -81,7 +81,7 @@ class ToDoList extends React.Component {
 
   fetchTasks() {
     // move the get tasks code into its own method so we can use it at other places
-    fetch("https://altcademy-to-do-list-api.herokuapp.com/tasks?api_key=302")
+    fetch("https://altcademy-to-do-list-api.herokuapp.com/tasks?api_key=2")
       .then(checkStatus)
       .then(json)
       .then((response) => {
@@ -97,7 +97,7 @@ class ToDoList extends React.Component {
     if (!id) {
       return; // if no id is supplied, early return
     }
-    fetch(`https://altcademy-to-do-list-api.herokuapp.com/tasks/${id}?api_key=302`, {
+    fetch(`https://altcademy-to-do-list-api.herokuapp.com/tasks/${id}?api_key=2`, {
       method: "DELETE",
       mode: "cors",
     }).then(checkStatus)
@@ -116,7 +116,7 @@ class ToDoList extends React.Component {
       return; // early return if no id
     }
     const newState = completed ? 'active' : 'complete';
-    fetch(`https://altcademy-to-do-list-api.herokuapp.com/tasks/${id}/mark_${newState}?api_key=302`, {
+    fetch(`https://altcademy-to-do-list-api.herokuapp.com/tasks/${id}/mark_${newState}?api_key=2`, {
       method: "PUT",
       mode: "cors",
     }).then(checkStatus)
